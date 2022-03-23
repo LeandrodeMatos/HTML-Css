@@ -1,22 +1,29 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bebas+Neue&family=Sriracha&display=swap');
+
 :root {
     --cor0: #ecdbda;
     --cor1: #B80502;
     --cor2: #8A0301;
     --cor3: #421615;
     --cor4: #380101;
+
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Anton', sans-serif;
+    --font03: 'Archivo Narrow', sans-serif;
     }
 
 * {
     margin: 0px;
     padding: 0px;
+    
 }
-
 
 html, body {
     min-height: 100vh;
     background-color:white ;
+    font-family: var(--font01);
    
 }
 header { 
@@ -27,7 +34,9 @@ header {
 }
 header >h1 {
     padding-top: 50px;  
-    font-variant: small-caps;     
+    font-variant: small-caps;   
+    font-family: var(--font02);
+    font-size: 7vw;  
     
 }
 
@@ -63,19 +72,37 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--font03);
+    font-size: 2.5vw;
+   
 }
 section.normal {
     background-color: white;
     color: black;
+    
 }
 section.imagem,h2{
     background-color: rgb(59, 52, 52);
     color: white;
+   
+   
 }
 section.imagem >p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.486);
+    text-shadow: 1px 1px 0px blac1;
 }
+section#img01 {
+    background-image: url('../imagens/carol\ copiar.png');
+    background-size: cover ;
+     
+}
+section#img02 {
+    background-image: url('../imagens/background002.png');
+    background-size: cover;
+}
+
 footer {
     background-image: linear-gradient(to bottom,#421615, #8A0301, #B80502);
    color: white;
