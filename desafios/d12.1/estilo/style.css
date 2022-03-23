@@ -30,6 +30,7 @@ header {
    background-image: linear-gradient(to bottom,#421615, #8A0301, #B80502);
    color: white;
    text-align: center;
+   
   
 }
 header >h1 {
@@ -51,20 +52,27 @@ header a, footer a {
 }
 header a:hover, footer a:hover {
     text-decoration: underline;
+    
 }
 a {
     color: #f0100c;
     font-weight: bolder;
     text-decoration: none;
+    
 }
 a:hover {
     text-decoration: underline;
 }
+a.externo::after {
+    content: '\00A0\1F517';
+}
 h2 {
-    color: var(--cor2);
+    color: var(--cor1);
+    font-family: var(--font02);
+    font-size: 2em;
     padding-left: 30px;
     padding-top: 5px;
-
+    
     
 }
 section {
@@ -81,30 +89,31 @@ section.normal {
     color: black;
     
 }
-section.imagem,h2{
-    background-color: rgb(59, 52, 52);
-    color: white;
-   
-   
+section.imagem {
+   color: white;
+   background-size: cover;
+   box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.473);
+   background-attachment: fixed;
+
 }
 section.imagem >p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.486);
-    text-shadow: 1px 1px 0px blac1;
+    text-shadow: 1px 1px 0px black;
 }
 section#img01 {
-    background-image: url('../imagens/carol\ copiar.png');
-    background-size: cover ;
+    background-image: url('../imagens/background001.png');
+    background-position: center center ;
      
 }
 section#img02 {
     background-image: url('../imagens/background002.png');
-    background-size: cover;
+    background-position: center center ;
 }
 
 footer {
-    background-image: linear-gradient(to bottom,#421615, #8A0301, #B80502);
+    background-image: linear-gradient(to top,#421615, #8A0301, #B80502);
    color: white;
    text-align: center;
    padding: 10px;
