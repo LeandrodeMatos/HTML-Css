@@ -6,8 +6,79 @@
     --cor2: #8A0301;
     --cor3: #421615;
     --cor4: #380101;
+    }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html, body {
+    min-height: 100vh;
+    background-color:white ;
+   
+}
+header { 
+   background-image: linear-gradient(to bottom,#421615, #8A0301, #B80502);
+   color: white;
+   text-align: center;
+  
+}
+header >h1 {
+    padding-top: 50px;  
+    font-variant: small-caps;     
+    
+}
+
+header >p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
 
 }
-html, body {
-    background-color: var(--cor0)
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+a {
+    color: #f0100c;
+    font-weight: bolder;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h2 {
+    color: var(--cor2);
+    padding-left: 30px;
+    padding-top: 5px;
+
+    
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem,h2{
+    background-color: rgb(59, 52, 52);
+    color: white;
+}
+section.imagem >p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+footer {
+    background-image: linear-gradient(to bottom,#421615, #8A0301, #B80502);
+   color: white;
+   text-align: center;
+   padding: 10px;
 }
