@@ -36,7 +36,7 @@ header >h1 {
     padding-top: 50px;  
     font-variant: small-caps;   
     font-family: var(--font02);
-    font-size: 7vw;  
+    font-size: 7.3vw;  
     
 }
 
@@ -55,7 +55,7 @@ header a:hover, footer a:hover {
 }
 
 a {
-    color: #f0100c;
+    color: #f01410;
     font-weight: bolder;
     text-decoration: none;
     
